@@ -126,7 +126,7 @@ public abstract class HaddonUtilityImpl implements Utility {
 	
 	@Override
 	public void printChat(Object... args) {
-		if (client.unsafe().thePlayer == null) return;
+		if (client.unsafe().player == null) return;
 		
 		TextComponentString message = new TextComponentString("");
 		Style style = null;
@@ -187,7 +187,7 @@ public abstract class HaddonUtilityImpl implements Utility {
 			}
 		}
 		
-		client.unsafe().thePlayer.addChatComponentMessage(message);
+		client.unsafe().player.sendMessage(message);//addChatComponentMessage(message);
 	}
 	
     /**
