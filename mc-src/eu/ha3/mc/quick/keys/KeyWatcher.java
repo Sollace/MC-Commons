@@ -27,10 +27,13 @@ public class KeyWatcher implements SupportsTickEvents {
 	}
 	
 	@Override
-	public void onTick() {
-		for (KeyBinding key : keys) {
-			if (key.isPressed()) {
-				watcher.onKey(key);
+	public void onTick()
+	{
+		for (KeyBinding key : this.keys)
+            // dag edit getIsKeyPressed() -> isPressed()
+			if (key.isPressed())
+			{
+				this.watcher.onKey(key);
 			}
 		}
 	}

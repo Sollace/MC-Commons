@@ -1,1 +1,6 @@
 
+/MC-Commons/.nb-gradle/
+/MC-Commons/build/
+/MC-Commons/.gradle/
+/MC-Commons/build.gradle
+/MC-Commons/settings.gradle
